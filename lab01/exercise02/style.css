@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 body * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*
@@ -11,14 +13,50 @@ Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
 
+main {
+  display: flex;
+}
+
+section {
+  width: 350px;
+  margin: 10px;
+  border: solid 1px #ccc;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2,
+p,
+button {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+img {
+  width: 100%;
+}
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+  main {
+    flex-wrap: wrap;
+  }
+  section {
+    width: calc(50% - 20px);
+  }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
-
-    
+  section {
+    width: 100%;
+  }
 }
